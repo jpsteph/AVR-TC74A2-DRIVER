@@ -5,6 +5,7 @@
  *  Author: jpsteph
  */ 
 
+#include <stdint.h>
 
 #ifndef I2C_H_
 #define I2C_H_
@@ -27,12 +28,5 @@ uint8_t TWIReadNACK(void);
 
 uint8_t TWIGetStatus(void);
 
-void wakeUp(void);
-
-void sleep(void);
-
-uint8_t getTemp(void);
-
-float getTempMult(uint8_t count);
 
 #endif /* I2C_H_ */
